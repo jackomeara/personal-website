@@ -5,10 +5,22 @@ import Tangram from "../components/tangram";
 function Home() {
   return (
     <>
-      <Navbar />
-      <Content>
-        <Tangram />
-      </Content>
+      <div className="h-screen w-full flex flex-col">
+        <Navbar />
+        <Content>
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Tangram />
+          </div>
+        </Content>
+      </div>
     </>
   );
 }

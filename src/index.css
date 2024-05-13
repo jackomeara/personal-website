@@ -4,6 +4,7 @@
 
 :root {
   font-family: "PP Mori Regular";
+  background-color: #f6f5f1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,4 +16,33 @@
   font-family: "PP Mori Regular";
   src: local("PPMori-Regular"),
   url("./fonts/PPMori-Regular.otf") format("opentype");
+}
+
+.auto-scroll-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll linear infinite;
+}
+
+.auto-scroll-text-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes reverse-scroll {
+  from {
+    transform: translateX(-90%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }

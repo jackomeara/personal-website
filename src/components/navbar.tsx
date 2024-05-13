@@ -3,20 +3,17 @@ function Navbar() {
     <>
       <nav
         style={{
-          height: "12vh",
-          display: "flex",
-          width: "100%",
-          alignItems: "center",
           padding: "0 2vw",
         }}
+        className="items-center flex flex-row w-full h-24"
       >
-        <h1 style={{ flexGrow: 1 }} className="text-3xl">
-          Jack O'Meara
-        </h1>
-        <a href="/about" className="text-xl">
+        <a href="/" style={{ flexGrow: 1 }}>
+          <h1 className="sm:text-2xl lg:text-3xl">Jack O'Meara</h1>
+        </a>
+        <a href="/about" className="lg:text-xl sm:text-lg">
           About
         </a>
-        <a href="/projects" className="text-xl pl-6">
+        <a href="/projects" className="lg:text-xl sm:text-lg pl-6">
           Projects
         </a>
       </nav>
