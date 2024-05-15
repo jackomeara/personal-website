@@ -17,7 +17,7 @@ function Home() {
               alignItems: "center",
             }}
           >
-            <Tangram />
+            <Tangram size={550} />
           </div>
         </Content>
       </div>

@@ -16,7 +16,7 @@ class Shape {
   private currentPhase: number;
   private color: string;
   private transition_counter: number;
-  private TRANSITION_RATE = 120;
+  private TRANSITION_RATE = 70;
 
   constructor(phases: Phase[], originalPos: Point[], color: string) {
     this.phases = phases;
