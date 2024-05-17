@@ -29,7 +29,7 @@ function AutoScrollText(props: Props) {
   return (
     <>
       <div className="auto-scroll-text-container">
-        <div ref={textRef} className="auto-scroll-text text-6xl">
+        <div ref={textRef} className="auto-scroll-text text-4xl lg:text-6xl">
           {props.text}
         </div>
       </div>
